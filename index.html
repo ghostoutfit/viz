@@ -268,11 +268,157 @@
                 </div>
               )}
             </div>
+
+            {/* Sample Teacher Responses */}
+            <div style={{
+              marginTop: '80px',
+              paddingTop: '40px',
+              borderTop: '1px solid rgba(255,255,255,0.1)',
+            }}>
+              <h2 style={{
+                fontFamily: "'Instrument Serif', Georgia, serif",
+                fontSize: '28px',
+                fontWeight: 400,
+                color: '#fff',
+                marginBottom: '30px',
+                letterSpacing: '-0.3px',
+              }}>
+                Sample Teacher Responses
+              </h2>
+
+              <div style={{ display: 'grid', gap: '32px' }}>
+                {[
+                  {
+                    teacher: "Maria, 22 years, middle school",
+                    q1: "I want them to know they can figure hard things out. Not just in science—in life. That feeling of \"I didn't know how to do this, and then I did.\"",
+                    q2: "Last year a kid who never talked suddenly got up and drew on the board to explain why he disagreed with his group. The whole class shifted to listen. He wasn't right, exactly, but he was THINKING.",
+                    q3: "More time to let things unfold. I always feel like I'm cutting off good thinking to stay on schedule.",
+                    selections: "Students seeing themselves as capable of figuring things out / Kids arguing productively about ideas / Every student's voice shaping the conversation"
+                  },
+                  {
+                    teacher: "Derek, 3 years, high school chemistry",
+                    q1: "Honestly? That science isn't just for \"science kids.\" That they could be someone who understands how the world works.",
+                    q2: "A lab where the results didn't match what they expected, and instead of asking me what went wrong, they started hypothesizing themselves. I just watched.",
+                    q3: "More labs. It's all about time and materials though.",
+                    selections: "Students seeing themselves as capable of figuring things out / Wonder about the everyday world / Curiosity driving what happens next"
+                  },
+                  {
+                    teacher: "Patricia, 15 years, 6th grade",
+                    q1: "Curiosity. That thing where you're walking outside and you notice something and wonder why.",
+                    q2: "We were studying weather and a kid asked why the clouds outside RIGHT NOW looked different than yesterday. We dropped everything and went outside. Couldn't have planned it.",
+                    q3: "Following student questions where they lead, even when it's off my plan.",
+                    selections: "Wonder about the everyday world / Students asking questions I hadn't anticipated / Curiosity driving what happens next"
+                  },
+                  {
+                    teacher: "James, 1st year, 9th grade biology",
+                    q1: "I want them to feel like scientists, not just people learning about science. If that makes sense?",
+                    q2: "Still waiting for that moment honestly. There have been glimpses. A few kids got excited about the owl pellet dissection but it felt more like entertainment than thinking.",
+                    q3: "I wish I knew how to get real discussions going. They just wait for me to tell them the answer.",
+                    selections: "Students seeing themselves as capable of figuring things out / Kids arguing productively about ideas / Curiosity driving what happens next"
+                  },
+                  {
+                    teacher: "Anita, 8 years, 7th grade life science",
+                    q1: "That their ideas matter. That they don't need permission to be smart.",
+                    q2: "A quiet girl drew a model of how she thought cells divide. It was wrong but beautiful—she'd really thought about it. Other kids started asking her questions, not me. I almost cried.",
+                    q3: "Building on student ideas instead of redirecting to the \"right\" answer so fast.",
+                    selections: "Every student's voice shaping the conversation / Messiness and revision as signs of real thinking / Students seeing themselves as capable of figuring things out"
+                  },
+                  {
+                    teacher: "Robert, 28 years, high school physics",
+                    q1: "Problem-solving. The world gives you problems without answer keys. I want them ready.",
+                    q2: "Engineering challenge day. They had to build something that worked. Failure after failure, then success. Real physics, real stakes, real pride.",
+                    q3: "More engineering and design. Less content coverage mandates.",
+                    selections: "Students seeing themselves as capable of figuring things out / Messiness and revision as signs of real thinking / Kids arguing productively about ideas"
+                  },
+                  {
+                    teacher: "Keisha, 5 years, 8th grade physical science",
+                    q1: "That science is for them. Especially my Black and Brown kids who've gotten messages that it isn't.",
+                    q2: "When my students interviewed community members about local water quality and realized THEY knew things adults didn't. The pride in that room.",
+                    q3: "Connecting science to their lives and communities more. Making it matter to them specifically.",
+                    selections: "Every student's voice shaping the conversation / Students seeing themselves as capable of figuring things out / Wonder about the everyday world"
+                  },
+                  {
+                    teacher: "Tom, 12 years, high school earth science",
+                    q1: "Critical thinking. Being able to look at a claim and evaluate the evidence. Not believing everything they read.",
+                    q2: "Climate change discussions where students had to argue positions using data. Got heated in a good way. They were using evidence to push back on each other.",
+                    q3: "More data analysis. More real scientific argumentation.",
+                    selections: "Kids arguing productively about ideas / Curiosity driving what happens next / Students seeing themselves as capable of figuring things out"
+                  },
+                  {
+                    teacher: "Susan, 2nd year, 6th grade",
+                    q1: "That being confused is okay? I don't know. I'm still figuring out what I hope for. I want them to like science.",
+                    q2: "A kid asked a question I genuinely didn't know the answer to and we looked it up together. They seemed surprised that I didn't know. That felt like something.",
+                    q3: "Being less nervous. Trusting myself to go off-script.",
+                    selections: "Wonder about the everyday world / Curiosity driving what happens next / Messiness and revision as signs of real thinking"
+                  },
+                  {
+                    teacher: "Victor, 18 years, high school chemistry",
+                    q1: "Persistence. Science is hard. Life is hard. You stick with it.",
+                    q2: "A kid who'd failed the first test came in for help every day for a month. By the end of the semester she was helping other students. That's science class to me.",
+                    q3: "More one-on-one time. Thirty-five kids in a room is impossible.",
+                    selections: "Students seeing themselves as capable of figuring things out / Messiness and revision as signs of real thinking / Every student's voice shaping the conversation"
+                  }
+                ].map((response, index) => (
+                  <div key={index} style={{
+                    padding: '24px',
+                    background: 'rgba(255,255,255,0.03)',
+                    borderRadius: '12px',
+                    borderLeft: '3px solid rgba(150,180,255,0.5)',
+                  }}>
+                    <div style={{
+                      color: 'rgba(150,180,255,1)',
+                      fontSize: '16px',
+                      fontWeight: 500,
+                      marginBottom: '16px',
+                    }}>
+                      Teacher {index + 1}: {response.teacher}
+                    </div>
+
+                    <div style={{ marginBottom: '12px' }}>
+                      <div style={{ color: 'rgba(255,200,120,0.8)', fontSize: '13px', marginBottom: '4px' }}>
+                        Q1: What do you most hope students take with them from your science classroom?
+                      </div>
+                      <div style={{ color: 'rgba(255,255,255,0.9)', fontSize: '14px', lineHeight: '1.6', marginLeft: '12px' }}>
+                        {response.q1}
+                      </div>
+                    </div>
+
+                    <div style={{ marginBottom: '12px' }}>
+                      <div style={{ color: 'rgba(255,200,120,0.8)', fontSize: '13px', marginBottom: '4px' }}>
+                        Q2: Tell me about a moment in your classroom when you felt like "THIS is it. This is the kind of science class I want to be leading."
+                      </div>
+                      <div style={{ color: 'rgba(255,255,255,0.9)', fontSize: '14px', lineHeight: '1.6', marginLeft: '12px' }}>
+                        {response.q2}
+                      </div>
+                    </div>
+
+                    <div style={{ marginBottom: '16px' }}>
+                      <div style={{ color: 'rgba(255,200,120,0.8)', fontSize: '13px', marginBottom: '4px' }}>
+                        Q3: If you could change one thing about your practice or context to make those moments more common, what would it be?
+                      </div>
+                      <div style={{ color: 'rgba(255,255,255,0.9)', fontSize: '14px', lineHeight: '1.6', marginLeft: '12px' }}>
+                        {response.q3}
+                      </div>
+                    </div>
+
+                    <div style={{
+                      color: 'rgba(255,255,255,0.5)',
+                      fontSize: '12px',
+                      fontStyle: 'italic',
+                      borderTop: '1px solid rgba(255,255,255,0.1)',
+                      paddingTop: '12px',
+                    }}>
+                      Selections: {response.selections}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       );
     }
-    
+
     ReactDOM.createRoot(document.getElementById('root')).render(<ConstellationMap />);
   </script>
 </body>
